@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table action="/history" method="get" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dict in history %}
+                <tr>
+                    <td>{{ dict.symbol }}</td>
+                    <td>{{ dict.shares }}</td>
+                    <td>{{ dict.type }}</td>
+                    <td>{{ dict.price | usd }}</td>
+                    <td>{{ dict.time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+
+    </table>
+{% endblock %}

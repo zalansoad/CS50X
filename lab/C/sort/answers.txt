@@ -1,0 +1,25 @@
+sort1 uses: Bubble sort
+
+
+How do you know?: Where the list is already sorted, bubble sort is expected to finish sooner. From the results, we can see this.
+Here are the test reults:
+time ./sort1 sorted50000.txt real    0m0.637s
+time ./sort2 sorted50000.txt real    0m0.439s
+time ./sort3 sorted50000.txt real    0m2.614s
+
+sort2 uses: Merge sort
+
+How do you know?: it was the fastest, thus, it must be merge sort. Here are the results:
+time ./sort1 reversed50000.txt 0m5.269s
+time ./sort2 reversed50000.txt real    0m0.595s
+time ./sort3 reversed50000.txt real     0m2.518s
+
+sort3 uses: Selection sort
+
+
+
+How do you know?: In a sorted list it is the slowest. This we can see here:
+time ./sort1 sorted50000.txt real    0m0.637s
+time ./sort2 sorted50000.txt real    0m0.439s
+time ./sort3 sorted50000.txt real    0m2.614s
+

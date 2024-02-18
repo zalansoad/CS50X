@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="initial/sclate=1, width=device-width">
+        <title>StreamsROOSTER</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('#buttonGear').addEventListener('click', function() {
+                    let alert = document.getElementById("popup");
+                    alert.style.display = "block";
+
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('.close').addEventListener('click', function() {
+                    let alert = document.getElementById("popup");
+                    alert.style.display = "none";
+
+                });
+            });
+
+            window.addEventListener('click', function(event) {
+                let alert = document.getElementById("popup");
+                if (event.target == alert) {
+                    alert.style.display = "none";
+                }
+            });
+        </script>
+    </head>
+    <!--Navbar-->
+
+    <body>
+        <div class=topdiv>
+            <img class=rooster alt="Rooster" src="Logo2png.png">
+        </div>
+        <div class="navbarmid rounded-pill navmid bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark rounded-pill">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="social.html">Social</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="games.html">Games</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="setup.html">Setup</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container-xl" id="bodyWithPadding">
+            <!--Alert-->
+            <div id="popup" class="alert">
+                <div class="alert-content rounded alert-text">
+                    <span class="close alert-text">X</span>
+                    <p>Click on the picture of the components to get to the official site of the product.</p>
+                </div>
+            </div>
+
+            <div class="gamertitle rounded bg-dark navbar-dark">
+                <h1>Check out my gear</h1>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button id="buttonGear" class="buttoninf rounded-pill">More info</button>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <!--Setup: Case-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://kolink.eu/hungarian/case/micro-atx-1/citadel-glass-se-1.html">
+                                <img src="KolinkCitadelGlassSEjpg.png" alt="case">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>Case</h1>
+                            <p></p>
+                            <h2>Case Kolink Citadel Glass SE</h2>
+                        </div>
+                    </div>
+                    <!--Setup: Primary Monitor-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>Primary Monitor</h1>
+                                <p></p>
+                                <h2>ASUS PG258Q 244HZ</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://rog.asus.com/monitors/23-to-24-5-inches/rog-swift-pg258q-call-of-duty-black-ops-4-edition-model/">
+                                    <img src="ASUSPG258Q244HZ.png" alt="primary monitor">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Setup: Secondary Monitor-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://aoc.com/us/gaming/products/monitors/24g2spu-bk">
+                                <img src="AOC24G2SPU.png" alt="secodary monitor">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>Secondary Monitor</h1>
+                            <p></p>
+                            <h2>AOC 24G2SPU</h2>
+                        </div>
+                    </div>
+                    <!--Setup: Mouse-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>Mouse</h1>
+                                <p></p>
+                                <h2>Razer Basilisk V3</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://www.razer.com/gaming-mice/razer-basilisk-v3/RZ01-04000100-R3U1">
+                                    <img src="RazerBasiliskV3.png" alt="mouse" id="mouse">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Setup: Keyboard-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://www.razer.com/gaming-keyboards/razer-blackwidow-v3-tenkeyless">
+                                <img src="RazerBlackwidowV3Tenkeyless.png" alt="keyboard">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>Keyboard</h1>
+                            <p></p>
+                            <h2>Razer Blackwidow V3 Tenkeyless</h2>
+                        </div>
+                    </div>
+                    <!--Setup: Headset-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>Headset</h1>
+                                <p></p>
+                                <h2>Razer Kraken Tournament</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://mysupport.razer.com/app/answers/detail/a_id/3555/~/razer-kraken-tournament-edition-%7C-rz04-02051-support-%26-faqs">
+                                    <img src="RazerKrakenTournament.png" alt="headset">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Setup: Microphone-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://ca.hyperx.com/products/hyperx-quadcast-usb-microphone?variant=41025215529120">
+                                <img src="HyperXQuadcast.png" alt="microphone">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>Microphone</h1>
+                            <p></p>
+                            <h2>HyperX Quadcast</h2>
+                        </div>
+                    </div>
+                    <!--Setup: Camera-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>Camera</h1>
+                                <p></p>
+                                <h2>Logitech C922 PRO</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://www.logitech.com/en-eu/products/webcams/c922-pro-stream-webcam.html">
+                                    <img src="LogitechC922PRO.png" alt="camera">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gamertitle rounded bg-dark navbar-dark">
+                        <h1>Configuration</h1>
+                    </div>
+                </div>
+                <div class="container-xl">
+                    <!--Setup: CPU-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://www.amd.com/en/products/cpu/amd-ryzen-7-5800x3d">
+                                <img src="AMDRyzen75800X3D.png" alt="cpu">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>CPU</h1>
+                            <p></p>
+                            <h2>AMD Ryzen 7 5800X3D</h2>
+                        </div>
+                    </div>
+                    <!--Setup: Graphics Card-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>Graphics Card</h1>
+                                <p></p>
+                                <h2>ASUS TUF-RTX3060TI-O8GD6X-GAMING GeForce RTX 3060 Ti 8GB GDDR6X TUF Gaming OC PCIE</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://www.asus.com/motherboards-components/graphics-cards/tuf-gaming/tuf-rtx3060ti-o8gd6x-gaming/">
+                                    <img src="ASUSTUF-RTX3060TI.png" alt="Graphics Card">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Setup: RAM-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr4-rgb-memory">
+                                <img src="KingstonFURY16GB.png" alt="ram">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>RAM</h1>
+                            <p></p>
+                            <h2>Razer Blackwidow V3 Tenkeyless</h2>
+                        </div>
+                    </div>
+                    <!--Setup: CPU Cooler-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>CPU Cooler</h1>
+                                <p></p>
+                                <h2>NZXT Kraken 280 RGB</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://nzxt.com/product/kraken-280-rgb">
+                                    <img src="NZXTKraken280RGB.png" alt="cpu cooler">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Setup: Motherboard-->
+                    <div class="row setupbodyleft rounded">
+                        <div class="col-xs-12 col-md-6">
+                            <a href="https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus-wifi-ii/">
+                                <img src="ASUSTUFGAMINGB550M-PLUSWIFIII.png" alt="motherboard">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <h1>Motherboard</h1>
+                            <p></p>
+                            <h2>ASUS TUF GAMING B550M-PLUS WIFI II</h2>
+                        </div>
+                    </div>
+                    <!--Setup: PSU-->
+                    <div class="d-flex justify-content-end">
+                        <div class="row justify-content-center setupbodyright rounded">
+                            <div class="col-xs-12 col-md-6">
+                                <h1>Power Supply Unit</h1>
+                                <p></p>
+                                <h2>COOLERMASTER MWE Gold V2 Modular 750W</h2>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <a href="https://www.coolermaster.com/catalog/power-supplies/mwe-series/mwe-gold-750-v2-full-modular/">
+                                    <img src="COOLERMASTERMWEGoldV2Modular750W.png" alt="psu">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

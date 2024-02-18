@@ -1,0 +1,297 @@
+/* TAG SELECTOR */
+body {
+    background: linear-gradient(90deg, rgba(61, 9, 9, 1) 0%, rgba(94, 9, 9, 1) 50%, rgba(61, 9, 9, 1) 100%);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* ID SELECTOR */
+#index {
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#mouse {
+    max-height: 350px;
+}
+
+#bodyWithPadding {
+    padding-bottom: 30px;
+}
+
+
+/* CLASS SELECTOR */
+.topdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+/* child combinator selector */
+.indextext>h4 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.margintop30 {
+    margin-top: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.rooster {
+    width: 100%;
+    height: auto;
+    max-width: 850px;
+    margin-top: 25px;
+}
+
+.texdec {
+    text-decoration: none;
+    color: white
+}
+
+.navbarmid {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    min-width: 300px;
+}
+
+.navmid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item,
+.navbar-toggler {
+    margin: 0 auto;
+}
+
+
+.divbodytext {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    Color: white;
+}
+
+.setupbodyleft {
+    width: 55%;
+    min-width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 8px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.setupbodyright {
+    width: 55%;
+    min-width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 8px;
+}
+
+
+.borderyt {
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.gamertitle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 3px solid black;
+    min-width: 220px;
+    text-align: center;
+    color: white;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#buttonGear {
+    border: 2px solid black;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonyoutube {
+    background-color: #8C0707;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.frameboard {
+    border: 0;
+}
+
+/* PSEUDO CLASS SELECTOR */
+.buttonyoutube:hover {
+    background-color: #DA1313;
+    color: white;
+}
+
+.buttontiktok {
+    background-color: #0E0E0E;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.buttontiktok:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.buttontwitch {
+    background-color: #9146FF;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.buttontwitch:hover {
+    background-color: #610AE1;
+    color: white;
+}
+
+.buttondc {
+    background-color: #738ADB;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.buttondc:hover {
+    background-color: #4866D0;
+    color: white;
+}
+
+.buttonfb {
+    background-color: #1877F2;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.buttonfb:hover {
+    background-color: #0551B5;
+    color: white;
+}
+
+.buttonig {
+    background-color: #F766B3;
+    color: white;
+    border: 2px solid #000000;
+}
+
+.buttonig:hover {
+    background-color: #BD2073;
+    color: white;
+}
+
+.centered-divsoc {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.gamevid {
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+/* alert + button */
+.buttoninf {
+    background-color: #585858;
+    color: white;
+    border: 2px solid white;
+}
+
+.buttoninf:hover {
+    background-color: #262626;
+    color: white;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.alert-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.alert-text {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
